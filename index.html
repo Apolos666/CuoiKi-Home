@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý thư viện</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div class="topnav">
+                <div class="topnav-left">
+                    <div class="Logo"><img src="./assets/images/Logo.png" alt=""></div>
+                    <div class="topnav-left-contact">ĐT: (024) 3846 4349</div>
+                </div>
+                <div class="topnav-right">
+                    <div class="socials">
+                        <div class="socials-left">
+                            <i class="fa-solid fa-power-off"></i>
+                            <div class="socials-login-text">Đăng nhập</div></div>
+                        <i class="fa-brands fa-facebook socials-icon socials-icon-fa"></i>
+                        <i class="fa-brands fa-google socials-icon"></i>
+                        <i class="fa-brands fa-youtube socials-icon"></i>
+                        <i class="fa-brands fa-twitter socials-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="nav-mobile">
+                    <div class="titlenav-mobile">NIÊN GIÁM THỐNG KÊ</div>
+                    <div id="btn-dropdown" onclick="dropdown(), accordingScrollMenu()"><i class="fa-solid fa-bars"></i></div>
+                </div>
+                <div class="link-web">
+                    <div class="link-web-text">www.thuvienthongke.com</div>
+                </div>
+                <div class="nav-dir">
+                    <div class="nav-dir-box">
+                        <div class="Home nav-dir-link">Trang Chủ</div>
+                        <div class="Introduce nav-dir-link">
+                            <div class="" onclick="dropdown_Intro(), accordingScrollSecIntro()">Giới thiệu</div>
+                            <div class="Introduce-box">
+                                <div class="Introduce-box-text"><i class="fa-solid fa-right-long"></i> Giới thiệu thư viện sách</div>
+                                <div class="Introduce-box-text"><i class="fa-solid fa-right-long"></i> Điều khoản và hướng dẫn sử dụng</div>
+                            </div>
+                        </div>
+                        <div class="Library-item nav-dir-link">
+                            <div class="Library-item-text" onclick="dropdown_Lib(), accordingScrollSecLib()">Thư viện ấn phẩm</div>
+                            <div class="Library-item-dropdown">
+                                <div class="Library-item-dropdown-content">
+                                    <div class="dropdown-content-title">NIÊN GIÁM THỐNG KÊ TOÀN QUỐC</div>
+                                    <div class="dropdown-content-sec">
+                                        <div class=""><i class="fa-solid fa-right-long"></i> Bản tóm tắt</div>
+                                        <div class=""><i class="fa-solid fa-right-long"></i> Bản đầy đủ</div>
+                                    </div>
+                                </div>
+                                <div class="Library-item-dropdown-content">
+                                    <div class="dropdown-content-title">NIÊN GIÁM THỐNG KÊ TỈNH/THÀNH PHỐ</div>
+                                    <div class="dropdown-content-sec">
+                                        <div class=""><i class="fa-solid fa-right-long"></i> Trung du và miền núi phía Bắc</div>
+                                        <div class=""><i class="fa-solid fa-right-long"></i> Đồng bằng sông Hồng</div>
+                                        <div class=""><i class="fa-solid fa-right-long"></i> Bắc trung bộ và duyên hải miền Trung</div>
+                                        <div class=""><i class="fa-solid fa-right-long"></i> Tây Nguyên</div>
+                                        <div class=""><i class="fa-solid fa-right-long"></i> Đông Nam Bộ</div>
+                                        <div class=""><i class="fa-solid fa-right-long"></i> Dồng Bằng Sông Cửu Long</div>
+                                    </div>
+                                </div>
+                                <div class="Library-item-dropdown-content">
+                                    <div class="dropdown-content-title">TÀI LIỆU KHÁC</div>
+                                    <div class="dropdown-content-sec">Thông tin thống kê là sản phẩm cuối cùng của hoạt động thống kê. Tuyên truyền, phổ biến để đưa thông tin thống kê đến gần hơn với mọi đối tượng sử dụng là nhiệm vụ quan trọng của toàn Ngành. Những năm gần đây, thư viện Thống kê đang được đánh giá là một trong những kênh phổ biến thông tin thống kê khá hiệu quả; trở thành địa chỉ vàng, là điểm đến tin cậy của đông đảo người dùng tin trong và ngoài nước.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Article nav-dir-link">
+                            <div class="Article-title" onclick="dropdown_Art(), accordingScrollSecArt()">Tin tức</div>
+                            <div class="Article-box">
+                                <div class="Article-box-text"><i class="fa-solid fa-right-long"></i> Tin từ thư viện thống kê</div>
+                                <div class="Article-box-text"><i class="fa-solid fa-right-long"></i> Tin từ thị trường sách</div>
+                            </div>
+                        </div>
+                        <div class="Service nav-dir-link">Dịch vụ</div>
+                        <div class="nav-contact nav-dir-link">Liên hệ</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="slider">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <!-- <div class="numbertext">1 / 2</div> -->
+                  <img src="./assets/images/banner-02.jpg" style="width:100%">
+                  <div class="mySlides-content">
+                      <div class="mySlides-title">
+                            <div class="mySlides-title-top">Thư viện sách thống kê</div>        
+                            <div class="mySlides-title-bottom">Nơi cập nhật ấn phẩm thống kê mới nhất, đầy đủ nhất của các năm</div>        
+                      </div>
+                      <div class="mySlides-button">Xem Tiếp</div>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <!-- <div class="numbertext">2 / 2</div> -->
+                  <img src="./assets/images/banner-01.jpg" style="width:100%">
+                  <div class="mySlides-content">
+                    <div class="mySlides-title">
+                        <div class="mySlides-title-top">Thư viện sách thống kê</div>        
+                        <div class="mySlides-title-bottom">Mở cửa từ thứ 2 đến thứ 6 hàng tuần</div>        
+                    </div>
+                    <div class="mySlides-button">Xem Tiếp</div>
+                  </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                <div class="dot-select">
+                  <span class="dot" onclick="currentSlide(1)">1</span> 
+                  <span class="dot" onclick="currentSlide(2)">2</span> 
+                </div>      
+                </div>             
+        </div>
+        <div class="option">
+            <div class="option-select-1">
+                <label class="option-select-name" for="">Từ khóa:</label>
+                <input type="text" placeholder="Tên ấn phẩm, tỉnh...">
+            </div>
+            <div class="option-select-2">
+                <label class="option-select-name" for="">Nhóm ấn phẩm:</label>
+                <select name="" id="">
+                    <option value="1">Chọn nhóm ...</option>
+                    <option value="2">Niên giám thống kê toàn quốc</option>
+                    <option value="3">-> Bản tóm tắt đầy đủ</option>
+                    <option value="4">-> Bản đầy đủ</option>
+                    <option value="5">Niên giám thống kê tỉnh/thành phố</option>
+                    <option value="6">-> Trung du và miền núi phía bắc</option>
+                    <option value="7">-> Dồng bằng sông Hồng</option>
+                    <option value="8">-> Bắc Trung bộ và Duyên hải miền Trung</option>
+                    <option value="9">-> Tây Nguyên</option>
+                    <option value="10">-> Đông Nam Bộ</option>
+                    <option value="11">-> Đồng bằng sông Cửu Long</option>
+                    <option value="12">-> Tài liệu khác</option>
+                </select>
+            </div>
+            <div class="option-select-3">
+                <label class="option-select-name" for="">Năm xuất bản:</label>
+                <select name="" id="">
+                    <option value="1">Chọn năm xuất bản</option>
+                    <option value="2">Năm 2013</option>
+                    <option value="3">Năm 2014</option>
+                    <option value="4">Năm 2015</option>
+                    <option value="5">Năm 2016</option>
+                    <option value="6">Năm 2017</option>
+                    <option value="7">Năm 2018</option>
+                    <option value="8">Năm 2019</option>
+                    <option value="9">Năm 2020</option>
+                    <option value="10">Năm 2021</option>
+                    <option value="11">Năm 2022</option>
+                </select>
+            </div>
+            <div class="option-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Tìm kiếm
+            </div>
+        </div>
+        <div class="" style="height: 1000px;"></div>
+    </div>
+    <script src="./dropdown.js"></script>
+    <script src="./fixedHeader.js"> </script>
+    <script src="./slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Top nav */
+
+    .topnav {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .Logo {
+        width: 50%;
+    }
+
+    .Logo img {
+        display: block;
+        width: 100%;
+    }
+
+    .topnav-left-contact {
+        width: 50%;
+        margin-left: 4px;
+        padding-left: 0;
+        border-left: 1px solid #ccc;
+        padding: 10px 0 10px 5px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .topnav-left {
+        width: 100%;
+    }
+
+    .topnav-right {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .socials {
+        justify-content: flex-start;
+    }
+    
+    .socials-icon-fa {
+        margin-left: 40%;
+    }
+    /* Nav */
+
+    .nav {
+        display: block;
+        margin-top: 10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .nav-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .titlenav-mobile,
+    #btn-dropdown {
+        display: block;
+        padding: 0 10px;
+    }
+
+    #btn-dropdown {
+        font-size: 24px;
+    }
+
+    .link-web {
+        width: 100%;
+    }
+
+    .link-web,
+    .nav-dir {
+        display: none;
+    }
+
+    .link-web.show,
+    .nav-dir.show,
+    .nav-dir-box {
+        display: block;
+        background-color: white;
+    }
+
+    .link-web-text,
+    .nav-dir-box {
+        width: 100%;
+        color: black;
+        max-height: 0;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .link-web-text {
+        margin-left: 0%;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .Introduce::before,
+    .Library-item::before,
+    .Article::before {
+        content: "";
+        position: absolute;
+        border: solid black;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 2px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        top: 40%;
+        left: 90%;
+    }
+
+    .Introduce-box {
+        width: 100%;
+        z-index: 0;
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.2s;
+        transform: translateY(0);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        box-shadow: none;
+    }
+
+    .nav-dir-link {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .Library-item-dropdown {
+        flex-direction: column;
+        z-index: 0;
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        box-shadow: none;
+    }
+
+    .Library-item-dropdown-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .dropdown-content-sec {
+        line-height: 24px;
+    }
+
+    .Article-box {
+        z-index: 0;
+        position: static;
+        background-color: white;
+        color: black;
+        font-size: 14px;
+        text-transform: none;
+        width: 100%;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.2s;
+        transform: translateY(0);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        box-shadow: none;
+    }
+
+    .Article-box-text {
+        padding: 0;
+    }
+
+    /* Remove fixed scorll nav */
+    .sticky {
+        width: 400px;
+    }
+
+    /* Slider */
+    .slideshow-container {
+        height: 88px;
+    }
+
+    .mySlides-title,
+    .mySlides-button {
+        display: none;
+    }
+
+    .prev, .next {
+        padding: 4px;
+    }
+
+    .dot {
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+    }
+
+    /* Option */
+    .option {
+        display: block;
+        padding: 24px 8px;
+    }
+
+    .option-select-1 {
+        width: 45%;
+        float: left;
+        margin-right: 28px;
+    }
+    
+    .option-select-2 {
+        width: 45%;
+    }
+    
+    .option-select-3 {
+        width: 45%;
+        float: left;
+        margin-right: 28px;
+        margin-top: 10px;
+    }
+
+    .option-btn {
+        margin-top: 42px;
+    }
+}
