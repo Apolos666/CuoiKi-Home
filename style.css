@@ -423,3 +423,306 @@
     color: red;
     font-weight: 600;
 }
+
+/* New Release */
+.top-release {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-release-text {
+    padding: 10px;
+    border-left: 5px solid #004572;
+}
+
+.top-release-direction {
+    display: flex;
+    gap: 5px;
+}
+
+.top-release-direction div {
+    font-size: 16px;
+    padding: 4px 8px;
+    color: #ccc;
+    background-color: #333;
+}
+
+.top-release-direction div:hover {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bottom-release {
+    margin-top: 25px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.bottom-release::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.bottom-release-card {
+    padding: 11px;
+    position: relative;
+	left: 0px;
+    transition: 0.5s all;
+}
+
+.bottom-release-card:hover {
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.release-card-img img {
+    width: 210px;
+}
+
+.release-card-detail {
+    padding: 10px;
+}
+
+.release-card-detail-title {
+    font-weight: bold;
+}
+
+.release-card-detail-contact {
+    margin-top: 5px;
+    color: orange;
+}
+
+/* Content box */
+.content-box-top {
+    margin-top: 100px;
+    border-bottom: 2px solid #0066b3;
+}
+
+.box-top-title {
+    font-size: 20px;
+    padding: 16px 0;
+    background-color: #0066b3;
+    width: 34%;
+    color: white;
+}
+
+.fa-newspaper {
+    padding-left: 5px;
+}
+
+.content-box-bottom {
+    display: flex;
+    gap: 10px;
+}
+
+.box-bottom-left {
+    width: 25%;
+}
+
+.box-left-option {
+    padding: 12px 0;
+    font-weight: bold;
+}
+
+.box-left-option:nth-child(1) {
+    margin-top: 12px;
+}
+
+.box-left-content {
+    margin-top: 12px;
+    line-height: 24px;
+}
+
+.box-bottom-right {
+    width: 75%;
+    margin-top: 10px;
+}
+
+.box-bottom-right {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.box-card {
+    width: 25%;
+    padding: 10px;
+}
+
+.box-card:hover {
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.box-card-title {
+    font-weight: bold;
+    padding: 4px 0;
+}
+
+.box-card-contact {
+    color: orange;
+    padding-bottom: 10px;
+    padding-top: 2px;
+}
+
+.box-card-image img {
+    width: 202px;
+}
+
+.box-top-title-2 {
+    width: 38%;
+}
+
+.box-top-title-3 {
+    padding: 17px 0;
+    width: 14%;
+}
+
+.box-left-content-3 {
+    margin-top: 22px;
+}
+
+/* News */
+.news-top {
+    display: flex;
+    align-items: center;
+}
+
+.news-bottom {
+    margin-top: 35px;
+    display: flex;
+    gap: 12px;
+}
+
+.news-bottom-box {
+    border: 1px solid #ccc;
+}
+
+.news-top-1 {
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #000000;
+}
+
+.news-top-2,
+.news-top-3 {
+    padding: 10px;
+    border-left: 1px solid #000000;
+}
+
+.news-img {
+    height: 150px;
+    width: 224px;
+}
+
+.news-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.news-content {
+    padding: 10px;
+    height: 160px;
+}
+
+.news-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-logo {
+    width: 190px;
+    height: 36px;
+    margin: 0 60px;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    width: 100%;
+}
+
+.footer-nav-direction {
+    padding: 0 25px;
+}
+
+.footer-mid {
+    margin-top: 30px;
+}
+
+.footer-mid-left {
+    width: 60%;
+}
+
+.footer-mid-left-title,
+.footer-mid-right-title {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.footer-mid-left-info {
+    font-weight: bold;
+}
+
+.info-box span{
+    font-weight: normal;
+}
+
+.info-box {
+    padding: 2px 0;
+}
+
+.footer-mid {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.footer-mid-right {
+    width: 40%;
+}
+
+.right-schedule {
+    font-weight: bold;
+}
+
+.right-schedule-child {
+    padding: 2px 0;
+}
+
+.right-socials {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.footer-socials-box {
+    font-size: 35px;
+}
+
+.footer-bottom {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between
+}

@@ -1,0 +1,63 @@
+var direction = document.getElementsByClassName('direction-release');
+	var card = document.getElementsByClassName('bottom-release-card');
+	var width = document.body.clientWidth;
+	var l = 0;
+	var MovePer = -708;
+	if (width > 600) {
+		direction[1].onclick = ()=>{
+			l++;
+			for(var i of card)
+			{
+				if (l==0) {i.style.left = "0px";}
+				if (l==1) {i.style.left = `${MovePer}px`;}
+				// if (l==1) {i.style.left = `${MovePer}px`;}
+				if (l>1) {l=1}
+				// if (l==3) {i.style.left = "-2220px";}
+				// if (l==4) {i.style.left = "-2960px";}
+				// if (l>4) {l=4;}
+			}
+		}
+		direction[0].onclick = ()=>{
+			l--; 
+			for(var i of card)
+			{	
+				if (l==0) {i.style.left = "0px";}
+				if (l==1) {i.style.left = `${MovePer}px`;}
+				// if (l==2) {i.style.left = "-1480px";}
+				// if (l==3) {i.style.left = "-2220px";}
+				// if (l < 0) {l=0;}
+			}
+		}
+	}
+	
+	// Responsive
+	
+	if (width < 600) {
+		MovePer = -194;
+		direction[1].onclick = ()=>{
+			l++;
+			for(var i of card)
+			{
+				if (l==0) {i.style.left = "0px";}
+				if (l==1) {i.style.left = `${MovePer}px`;}
+				if (l==2) {i.style.left = `${MovePer * 2}px`;}
+				// if (l>1) {l=1}
+				if (l==3) {i.style.left = `${MovePer * 3}px`;}
+				if (l==4) {i.style.left = `${MovePer * 4}px`;}
+				if (l>4) {l=4;}
+			}
+		}
+		direction[0].onclick = ()=>{
+			l--; 
+			for(var i of card)
+			{	
+				if (l==0) {i.style.left = "0px";}
+				if (l==1) {i.style.left = `${MovePer}px`;}
+				if (l==2) {i.style.left = `${MovePer * 2}px`;}
+				if (l==3) {i.style.left = `${MovePer * 3}px`;}
+				if (l < 0) {l=0;}
+			}
+		}
+	}
+
+	
